@@ -35,7 +35,7 @@ export default defineConfig({
 			serviceEntryPoint: '@astrojs/image/sharp',
 		}),
 		mdx(),
-
+		// TODO: Check that !! Looks interesting...
 		...whenExternalScripts(() =>
 			partytown({
 				config: { forward: ['dataLayer.push'] },
